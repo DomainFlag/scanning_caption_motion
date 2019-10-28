@@ -1,0 +1,3 @@
+C:/Users/DomainFlag/Desktop/WS19-20/3D Scanning & Motion Capture/Exercises/Exercise 1/exercise_1/out/build/x64-Debug/CMakeFiles/exercise_01.dir
+C:/Users/DomainFlag/Desktop/WS19-20/3D Scanning & Motion Capture/Exercises/Exercise 1/exercise_1/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/DomainFlag/Desktop/WS19-20/3D Scanning & Motion Capture/Exercises/Exercise 1/exercise_1/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
