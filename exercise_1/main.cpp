@@ -44,7 +44,7 @@ int WriteFace(Vertex* vertices, std::stringstream & ss, float & edgeThreshold, u
 
 bool WriteMesh(Vertex* vertices, unsigned int width, unsigned int height, const std::string& filename)
 {
-	float edgeThreshold = 0.01f; // 1cm
+	float edgeThreshold = 0.1f; // 10cm
 
 	// TODO 2: use the OFF file format to save the vertices grid (http://www.geomview.org/docs/html/OFF.html)
 	// - have a look at the "off_sample.off" file to see how to store the vertices and triangles
@@ -62,15 +62,19 @@ bool WriteMesh(Vertex* vertices, unsigned int width, unsigned int height, const 
 	unsigned int nQuads = (width - 1) * (height - 1);
 
 	std::stringstream ss;
-	for (unsigned int topLeftIndex = 0; topLeftIndex < nQuads; topLeftIndex++) {
-		unsigned int idw = topLeftIndex % (width - 1);
-		unsigned int idh = (topLeftIndex - idw) / (height - 1);
+//    for (unsigned int j = 0; j < nQuads; j++) {
+//    unsigned int idw = j % (width - 1);
+//    unsigned int idh = (j - idw) / (width - 1);
+    for (unsigned int idw = 0 ; idw < width-1; idw++) {
+        for (unsigned int idh = 0; idh < height - 1; idh++) {
 
-		unsigned int bottomLeftIndex = (idh + 1) * (height - 1) + idw;
+            unsigned int topLeftIndex = idh * width + idw;
+            unsigned int bottomLeftIndex = topLeftIndex + width;//
 
-		nFaces += WriteFace(vertices, ss, edgeThreshold, topLeftIndex, topLeftIndex + 1, bottomLeftIndex + 1);
-		nFaces += WriteFace(vertices, ss, edgeThreshold, topLeftIndex, bottomLeftIndex + 1, bottomLeftIndex);
-	}
+            nFaces += WriteFace(vertices, ss, edgeThreshold, topLeftIndex, topLeftIndex + 1, bottomLeftIndex + 1);
+            nFaces += WriteFace(vertices, ss, edgeThreshold, topLeftIndex, bottomLeftIndex + 1, bottomLeftIndex);
+        }
+    }
 
 	// Write off file
 	std::ofstream outFile(filename);
@@ -88,7 +92,7 @@ bool WriteMesh(Vertex* vertices, unsigned int width, unsigned int height, const 
 			outFile << "0 0 0 255 255 255 255" << std::endl;
 		} else {
 			for (int h = 0; h < 3; h++) {
-				outFile << vertices[g].position(h) << " ";
+				outFile << (vertices[g].position(h)/vertices[g].position(3))  << " ";
 			}
 
 			for (int h = 0; h < 4; h++) {
@@ -112,7 +116,7 @@ bool WriteMesh(Vertex* vertices, unsigned int width, unsigned int height, const 
 int main()
 {
 	// Make sure this path points to the data folder
-	std::string filenameIn = "../data/rgbd_dataset_freiburg1_xyz/";
+	std::string filenameIn = "../../data/rgbd_dataset_freiburg1_xyz/";
 	std::string filenameBaseOut = "mesh_";
 
 	// load video
@@ -142,6 +146,7 @@ int main()
 		float cY = depthIntrinsics(1, 2);
 
 		// compute inverse depth extrinsics
+		Matrix3f depthIntrinsicsInv = sensor.GetDepthIntrinsics().inverse();
 		Matrix4f depthExtrinsicsInv = sensor.GetDepthExtrinsics().inverse();
 
 		Matrix4f trajectory = sensor.GetTrajectory();
@@ -172,10 +177,10 @@ int main()
 				Vector3f imagePixels = Vector3f((x - offsetWidthSize) * depth, (y - offsetHeightSize) * depth, depth);
 
 				// Compute camera position
-				Vector3f imageCamera = depthIntrinsics.inverse() * imagePixels;
+				Vector3f imageCamera = depthIntrinsicsInv * imagePixels;
 
 				// Compute world position
-				vertices[g].position = trajectoryInv * Vector4f(imageCamera(0), imageCamera(1), imageCamera(2), 0.0f);
+				vertices[g].position = trajectoryInv * depthExtrinsicsInv * Vector4f(imageCamera(0), imageCamera(1), imageCamera(2), 1.0f);
 
 				// Compute vertex color
 				unsigned int colorIndex = g * 4;
