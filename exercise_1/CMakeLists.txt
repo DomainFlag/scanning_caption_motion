@@ -18,7 +18,7 @@ endif(WIN32)
 set(CMAKE_CXX_STANDARD 14)
 
 
-set(HEADERS 
+set(HEADERS
     Eigen.h
     FreeImageHelper.h
     VirtualSensor.h
