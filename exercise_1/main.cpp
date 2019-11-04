@@ -59,17 +59,13 @@ bool WriteMesh(Vertex* vertices, unsigned int width, unsigned int height, const 
 
 	// TODO: Determine number of valid faces
 	unsigned int nFaces = 0;
-	unsigned int nQuads = (width - 1) * (height - 1);
 
 	std::stringstream ss;
-//    for (unsigned int j = 0; j < nQuads; j++) {
-//    unsigned int idw = j % (width - 1);
-//    unsigned int idh = (j - idw) / (width - 1);
     for (unsigned int idw = 0 ; idw < width-1; idw++) {
         for (unsigned int idh = 0; idh < height - 1; idh++) {
 
             unsigned int topLeftIndex = idh * width + idw;
-            unsigned int bottomLeftIndex = topLeftIndex + width;//
+            unsigned int bottomLeftIndex = topLeftIndex + width;
 
             nFaces += WriteFace(vertices, ss, edgeThreshold, topLeftIndex, topLeftIndex + 1, bottomLeftIndex + 1);
             nFaces += WriteFace(vertices, ss, edgeThreshold, topLeftIndex, bottomLeftIndex + 1, bottomLeftIndex);
@@ -92,7 +88,7 @@ bool WriteMesh(Vertex* vertices, unsigned int width, unsigned int height, const 
 			outFile << "0 0 0 255 255 255 255" << std::endl;
 		} else {
 			for (int h = 0; h < 3; h++) {
-				outFile << (vertices[g].position(h)/vertices[g].position(3))  << " ";
+				outFile << (vertices[g].position(h) / vertices[g].position(3))  << " ";
 			}
 
 			for (int h = 0; h < 4; h++) {
