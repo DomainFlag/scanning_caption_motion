@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="exercise_04"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\lib64\;CMake Files\..\..\..\..\..\..\..\lib64\cmake\;CMake Files\..\..\..\..\..\..\..\lib64\cmake\Ceres\;CMake Files\..\..\..\..\..\..\..\lib64\cmake\glog\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\share\;CMake Files\..\..\..\..\..\..\..\usr\share\eigen3\;CMake Files\..\..\..\..\..\..\..\usr\share\eigen3\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="surface">
+				<Option output="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/surface" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_DISABLE_EXTENDED_ALIGNED_STORAGE"/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL="/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS="/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/Eigen"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+					<Add directory="/lib64/cmake/Ceres/../include"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/glog-lib/include"/>
+					<Add directory="/usr/include/eigen3"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 surface"/>
+					<CompileFile command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="surface/fast">
+				<Option output="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/surface" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_DISABLE_EXTENDED_ALIGNED_STORAGE"/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL="/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS="/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/Eigen"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+					<Add directory="/lib64/cmake/Ceres/../include"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/glog-lib/include"/>
+					<Add directory="/usr/include/eigen3"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 surface/fast"/>
+					<CompileFile command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gaussian">
+				<Option output="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/gaussian" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_DISABLE_EXTENDED_ALIGNED_STORAGE"/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL="/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS="/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/Eigen"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+					<Add directory="/lib64/cmake/Ceres/../include"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/glog-lib/include"/>
+					<Add directory="/usr/include/eigen3"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 gaussian"/>
+					<CompileFile command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gaussian/fast">
+				<Option output="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/gaussian" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_DISABLE_EXTENDED_ALIGNED_STORAGE"/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL="/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS="/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/Eigen"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+					<Add directory="/lib64/cmake/Ceres/../include"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/glog-lib/include"/>
+					<Add directory="/usr/include/eigen3"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 gaussian/fast"/>
+					<CompileFile command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dragon">
+				<Option output="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/dragon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_DISABLE_EXTENDED_ALIGNED_STORAGE"/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL="/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS="/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/Eigen"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+					<Add directory="/lib64/cmake/Ceres/../include"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/glog-lib/include"/>
+					<Add directory="/usr/include/eigen3"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 dragon"/>
+					<CompileFile command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dragon/fast">
+				<Option output="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/dragon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_DISABLE_EXTENDED_ALIGNED_STORAGE"/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL="/>
+					<Add option="-DGOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS="/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/Eigen"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4"/>
+					<Add directory="/lib64/cmake/Ceres/../include"/>
+					<Add directory="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/glog-lib/include"/>
+					<Add directory="/usr/include/eigen3"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 dragon/fast"/>
+					<CompileFile command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -f &quot;/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/dragon.cpp">
+			<Option target="dragon"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/gaussian.cpp">
+			<Option target="gaussian"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/surface.cpp">
+			<Option target="surface"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/utils/io.h">
+			<Option target="surface"/>
+			<Option target="gaussian"/>
+			<Option target="dragon"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/utils/points.h">
+			<Option target="surface"/>
+			<Option target="gaussian"/>
+			<Option target="dragon"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/Ceres/CeresConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/Ceres/CeresConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/Ceres/CeresTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/Ceres/CeresTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/Ceres/FindEigen.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/Ceres/FindGlog.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/glog/glog-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\glog\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/glog/glog-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\glog\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/glog/glog-targets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\glog\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../lib64/cmake/glog/glog-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\lib64\cmake\glog\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../usr/share/eigen3/cmake/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../usr/share/eigen3/cmake/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../../../../../../../usr/share/eigen3/cmake/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\share\eigen3\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

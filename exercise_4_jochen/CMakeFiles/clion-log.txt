@@ -1,0 +1,17 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/jochen/Master/WS1920/3DSMC/exercises/exercise_4
+CMake Warning (dev) at CMakeLists.txt:3 (set):
+  implicitly converting 'TYPE' to 'STRING' type.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found installed version of Eigen: /usr/share/eigen3/cmake
+-- Found required Ceres dependency: Eigen version 3.3.7 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Found Ceres version: 2.0.0 installed in: / with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations]
+-- ceres library name: 
+-- path to ceres cmake information: /lib64/cmake/Ceres
+-- path to ceres include directory: /lib64/cmake/Ceres/../include
+-- glog library name: 
+-- path to glog include directory = /home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/../libs/glog-lib/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jochen/Master/WS1920/3DSMC/exercises/exercise_4

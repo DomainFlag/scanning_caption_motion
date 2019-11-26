@@ -1,0 +1,5 @@
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/CMakeFiles/edit_cache.dir
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/CMakeFiles/surface.dir
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/CMakeFiles/rebuild_cache.dir
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/CMakeFiles/gaussian.dir
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/CMakeFiles/dragon.dir
