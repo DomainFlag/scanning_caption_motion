@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/gaussian.cpp
+utils/io.h
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/utils/io.h
+utils/points.h
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/utils/points.h
+ceres/ceres.h
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/ceres/ceres.h
+math.h
+-
+
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/utils/io.h
+points.h
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/utils/points.h
+
+/home/jochen/Master/WS1920/3DSMC/exercises/exercise_4/utils/points.h
+vector
+-
+fstream
+-
+istream
+-
+iostream
+-
+sstream
+-
+

@@ -1,0 +1,1 @@
+/bin/c++     CMakeFiles/gaussian.dir/gaussian.cpp.o  -o gaussian /usr/lib/libceres.so.2.0.0 /usr/lib/libglog.so.0.4.0 /usr/lib/libglog.so /usr/lib/libunwind.so -lpthread 
