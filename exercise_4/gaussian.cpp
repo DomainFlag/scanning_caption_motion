@@ -1,24 +1,23 @@
+#define _USE_MATH_DEFINES
+
 #include "utils/io.h"
 #include "utils/points.h"
 
 #include "ceres/ceres.h"
 #include <cmath>
 
-const double PI = 3.141592653589793238463;
-
 struct GaussianCostFunction
 {
 	GaussianCostFunction(const Point2D& point_)
 		: point(point_)
-	{
-	}
+	{}
 
 	template<typename T>
 	bool operator()(const T* const mu, const T* const sigma, T* residual) const
 	{
 		// DONE: Implement the cost function
 		T val = 2.0 * sigma[0] * sigma[0];
-        T nl = 1.0 / sqrt(PI * val);
+        T nl = 1.0 / sqrt(M_PI * val);
         T nr = exp(-(pow(point.x - mu[0], 2) / val));
 
 		residual[0] = point.y - nl * nr;
